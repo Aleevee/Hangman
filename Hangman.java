@@ -20,7 +20,52 @@ public class Hangman{
 
         switch (answer) {
             case "N", "n" -> System.out.println("See you next time!");
-            case "Y", "y" -> System.out.println("Let's begin!");
+            case "Y", "y" -> {
+                System.out.println("Choose a difficulty: Easy (4), Medium(5), Hard (6)");
+                String difficulty = s.nextLine();
+
+                switch (difficulty) {
+                    case "easy", "Easy" -> {
+                        System.out.println("Easy (4 letters)");
+                        System.out.println("");
+                        System.out.println("_____");
+                        System.out.println("|/   |");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|_______");
+                        System.out.println("");
+                        System.out.println("__ __ __ __");
+                    }
+                    case "Medium", "medium" -> {
+                        System.out.println("Medium (5 letters)");
+                        System.out.println("");
+                        System.out.println("_____");
+                        System.out.println("|/   |");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|_______");
+                        System.out.println("");
+                        System.out.println("__ __ __ __ __");
+                    }
+                    case "Hard", "hard" -> {
+                        System.out.println("Hard (6 letters)");
+                        System.out.println("");
+                        System.out.println("_____");
+                        System.out.println("|/   |");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|");
+                        System.out.println("|_______");
+                        System.out.println("");
+                        System.out.println("__ __ __ __ __ __");
+                    }
+                }
+            }
         }
     }
 }
