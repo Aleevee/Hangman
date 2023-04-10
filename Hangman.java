@@ -25,48 +25,25 @@ public class Hangman{
                 String difficulty = s.nextLine();
 
                 switch (difficulty) {
-                    case "easy", "Easy" -> {
-                        System.out.println("Easy (4 letters)");
-                        System.out.println("");
-                        System.out.println("_____");
-                        System.out.println("|/   |");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|_______");
-                        System.out.println("");
-                        System.out.println("__ __ __ __");
-                    }
-                    case "Medium", "medium" -> {
-                        System.out.println("Medium (5 letters)");
-                        System.out.println("");
-                        System.out.println("_____");
-                        System.out.println("|/   |");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|_______");
-                        System.out.println("");
-                        System.out.println("__ __ __ __ __");
-                    }
-                    case "Hard", "hard" -> {
-                        System.out.println("Hard (6 letters)");
-                        System.out.println("");
-                        System.out.println("_____");
-                        System.out.println("|/   |");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|");
-                        System.out.println("|_______");
-                        System.out.println("");
-                        System.out.println("__ __ __ __ __ __");
+                       case "easy", "Easy" -> System.out.println("Easy (4 letters)");
+                    case "Medium", "medium" -> System.out.println("Medium (5 letters)");
+                    case "Hard", "hard" -> System.out.println("Hard (6 letters)");
+                }
+                System.out.println("_____");
+                System.out.println("|/   |");
+                System.out.println("|");
+                System.out.println("|");
+                System.out.println("|");
+                System.out.println("|");
+                System.out.println("|_______");
+
+                switch (difficulty) {
+                    case "easy", "Easy" -> System.out.println("__ __ __ __");
+                    case "Medium", "medium" -> System.out.println("__ __ __ __ __");
+                    case "Hard", "hard" -> System.out.println("__ __ __ __ __ __");
                     }
                 }
             }
         }
     }
-}
 
