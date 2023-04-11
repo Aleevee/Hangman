@@ -42,6 +42,8 @@ public class Hangman{
                     case "Medium", "medium" -> System.out.println("__ __ __ __ __");
                     case "Hard", "hard" -> System.out.println("__ __ __ __ __ __");
                     }
+                Random random = new Random();
+                int easyResponses = random.nextInt(20) + 1;
                 }
             }
         }
