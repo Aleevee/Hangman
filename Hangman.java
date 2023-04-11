@@ -44,8 +44,32 @@ public class Hangman{
                     }
                 Random random = new Random();
                 int easyResponses = random.nextInt(20) + 1;
-                }
-            }
-        }
-    }
+                
+                switch (easyResponses) {
+                    case 1 -> System.out.println("able");
+                    case 2 -> System.out.println("acid");
+                    case 3 -> System.out.println("baby");
+                    case 4 -> System.out.println("bear");
+                    case 5 -> System.out.println("crow");
+                    case 6 -> System.out.println("coal");
+                    case 7 -> System.out.println("dear");
+                    case 8 -> System.out.println("draw");
+                    case 9 -> System.out.println("ears");
+                    case 10 -> System.out.println("eels");
+                    case 11 -> System.out.println("feel");
+                    case 12 -> System.out.println("fear");
+                    case 13 -> System.out.println("grow");
+                    case 14 -> System.out.println("gear");
+                    case 15 -> System.out.println("aged");
+                    case 16 -> System.out.println("aunt");
+                    case 17 -> System.out.println("bail");
+                    case 18 -> System.out.println("beer");
+                    case 19 -> System.out.println("bald");
+                    case 20 -> System.out.println("born");
+                    case 21 -> System.out.println("beef");
+                  }
+              }
+          }
+      }
+  }
 
